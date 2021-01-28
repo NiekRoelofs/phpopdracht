@@ -46,7 +46,7 @@ class Books extends Controller
                 "publicationError" => ""
             ];
 
-            $charValidation = "/^[a-zA-Z0-9]*$/";
+            $charValidation = "/^[a-zA-Z0-9 ]*$/";
             $numberValidation = "/^[0-9]*$/";
             //check if all input fields are correct
             if(empty($data["title"])) {
@@ -106,8 +106,6 @@ class Books extends Controller
             if(!empty($bookEAN) && preg_match($numberValidation, $bookEAN)) { //check if empty and if only numbers are used
                 $this->bookService->deleteBook($bookEAN);
             }
-
-            $bookEAN = $_POST["bookEAN"];
 
             $this->index();
 

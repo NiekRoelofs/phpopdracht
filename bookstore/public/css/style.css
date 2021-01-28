@@ -3,7 +3,7 @@ html, body {
     font-size: larger;
 }
 
-.pageinfo{
+.pageinfo {
     margin: 10px;;
 }
 
@@ -50,18 +50,40 @@ html, body {
     transition: 0.15s ease-in;
 }
 
+#deletebook {
+    background-color: #ff726f;
+    border: 2px solid #ff726f;
+}
+
+#addbook {
+    background-color: #90ee90;
+    border: 2px solid #90ee90;
+}
+
+#clearfields {
+    background-color: #ff726f;
+    border: 2px solid #ff726f;
+}
+
 .invalidInput {
     color: #ff0000;
 }
 
 #table {
     height: 500px;
-    overflow:auto;
+    overflow: auto;
     margin: 20px;
 }
 
 #formatdate {
     color: #1d4b8f;
+}
+
+#footer {
+    text-align: center;
+    color: #a1a1a1;
+    position: fixed;
+    bottom: 0;
 }
 
 

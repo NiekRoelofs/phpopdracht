@@ -10,4 +10,6 @@ require APPROOT . "/views/includes/navigation.php";
     <p>On top of that, you can check out a list of books and if you're logged in, you can add and delete books from/to the list!</p>
     <p>A list of users is also available.</p>
 </div>
-
+<?php
+require APPROOT . "/views/includes/footer.php";
+?>

@@ -43,12 +43,15 @@ require APPROOT . "/views/includes/navigation.php";
 </div>
 <?php if (isset($_SESSION["user_id"])) : ?>
     <form class="bookforms" action="<?php echo URLROOT; ?>/books/addbook">
-        <input type="submit" value="Add book">
+        <input id="addbook" type="submit" value="Add book">
     </form>
     <form class="bookforms" action="<?php echo URLROOT; ?>/books/deletebook" method="POST">
         <label>Delete book from list with EAN code:</label>
         <input type="text" name="bookEAN" placeholder="EAN">
-        <input type="submit" value="Delete book">
+        <input id="deletebook" type="submit" value="Delete book">
     </form>
 <?php endif; ?>
+<?php
+require APPROOT . "/views/includes/footer.php";
+?>
 

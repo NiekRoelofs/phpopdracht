@@ -1,4 +1,8 @@
-<?php require APPROOT . "/views/includes/head.php"; ?>
-This page isn't available
+<?php
+require APPROOT . "/views/includes/head.php";
+require APPROOT . "/views/includes/navigation.php";
+?>
+
+<p>Something went wrong</p>
 
 <a href="<?php echo URLROOT; ?>/index">Back to home</a>

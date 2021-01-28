@@ -11,7 +11,8 @@ require APPROOT . "/views/includes/navigation.php";
         <option value="email">Email</option>
         <option value="date">Date</option>
     </select>
-<button type="submit">Filter</button>
+<button type="submit" name="filter">Filter</button>
+
 </form>
 <p id="formatdate">Use the yyyy/mm/dd format to filter on registration dates</p>
 
@@ -44,6 +45,9 @@ require APPROOT . "/views/includes/navigation.php";
   </tbody>
 </table>
 </div>
+<?php
+require APPROOT . "/views/includes/footer.php";
+?>
 
 
 

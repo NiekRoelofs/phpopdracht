@@ -9,13 +9,13 @@ require APPROOT . "/views/includes/navigation.php";
 
         <form action="<?php echo URLROOT; ?>/users/register" method="POST">
             <label>Username</label>
-            <input type="text" placeholder="Username" name="username">
+            <input id="username" type="text" placeholder="Username" name="username">
             <span class="invalidInput">
                 <?php echo $data["usernameError"]; ?>
             </span>
 
             <label>Email</label>
-            <input type="email" placeholder="e.g. frank@live.nl" name="email">
+            <input id="email" type="email" placeholder="e.g. frank@live.nl" name="email">
             <span class="invalidInput">
                 <?php echo $data["emailError"]; ?>
             </span>
@@ -37,3 +37,15 @@ require APPROOT . "/views/includes/navigation.php";
     </div>
 
 </div>
+<?php
+if (isset($_POST["username"])) {
+    $username = $_POST["username"];
+    $email = $_POST["email"];
+
+    echo "<script>
+            document.getElementById('username').value = '$username';
+            document.getElementById('email').value = '$email';
+                </script>";
+}
+require APPROOT . "/views/includes/footer.php";
+?>
