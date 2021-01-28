@@ -1,8 +1,8 @@
 <?php
 define("DB_HOST", "localhost");
-define("DB_USER", "inhollanduser");
-define("DB_PASS", "s2j0Ln~7");
-define("DB_NAME", "booklibrary");
+define("DB_USER", "");
+define("DB_PASS", "");
+define("DB_NAME", "");
 
 define("APPROOT", dirname(dirname(__FILE__)));
 
